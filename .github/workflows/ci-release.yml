@@ -1,0 +1,29 @@
+name: CI Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - custom_frappe_erpnext/__init__.py
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+
+      - name: Check Version from __init__.py
+        run: |
+          echo "APP_VERSION_TAG=$(grep "__version__" custom_frappe_erpnext/__init__.py | awk '{print $3}' | tr -d '"' | tr -d "'")" >> $GITHUB_ENV
+
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          CUSTOM_TAG: v${{ env.APP_VERSION_TAG }}
