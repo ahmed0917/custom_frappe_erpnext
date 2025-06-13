@@ -27,6 +27,7 @@ fixtures = [
                 "in",
                 [
                     "Sales Order-tax_id-label",
+                    "Address-address_type-label",
                 ],
             ]
         ],
