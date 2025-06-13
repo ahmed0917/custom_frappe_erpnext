@@ -6,7 +6,9 @@
  "engine": "InnoDB",
  "field_order": [
   "first_name",
-  "dob"
+  "pincode",
+  "dob",
+  "address"
  ],
  "fields": [
   {
@@ -18,12 +20,22 @@
    "fieldname": "dob",
    "fieldtype": "Datetime",
    "label": "DOB"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Date",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-11 15:47:33.683190",
+ "modified": "2025-06-13 16:19:13.869795",
  "modified_by": "Administrator",
  "module": "Custom App",
  "name": "Custom Doc",
