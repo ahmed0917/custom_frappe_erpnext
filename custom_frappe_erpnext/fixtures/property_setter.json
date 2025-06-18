@@ -46,5 +46,21 @@
   "property_type": "Data",
   "row_name": null,
   "value": "Users"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Email Account",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "domain",
+  "is_system_generated": 0,
+  "modified": "2025-06-18 16:35:54.621530",
+  "module": null,
+  "name": "Email Account-domain-label",
+  "property": "label",
+  "property_type": "Data",
+  "row_name": null,
+  "value": "Domain Name"
  }
 ]
