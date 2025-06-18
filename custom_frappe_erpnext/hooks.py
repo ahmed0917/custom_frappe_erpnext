@@ -30,6 +30,7 @@ fixtures = [
                     "Access Log-user-label",
                     "Sales Order-tax_id-label",
                     "Address-address_type-label",
+                    "Email Account-domain-label",
                 ],
             ]
         ],
