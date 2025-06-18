@@ -14,6 +14,7 @@ fixtures = [
                 "name",
                 "in",
                 [
+                    "Access Log-custom_id",
                     "Sales Invoice-custom_company_name",
                 ],
             ]
@@ -26,6 +27,7 @@ fixtures = [
                 "name",
                 "in",
                 [
+                    "Access Log-user-label",
                     "Sales Order-tax_id-label",
                     "Address-address_type-label",
                 ],
